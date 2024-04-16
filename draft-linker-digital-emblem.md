@@ -38,11 +38,10 @@ informative:
 
 In times of armed conflict, the emblems of the red cross, red crescent, and red crystal are used to mark *physical* infrastructure.
 This enables military units to identify assets as protected under international humanitarian law to avoid attacking them.
-This draft defines and tackles the novel security problem of how to extend such protection to *digital*, network-connected infrastructure through a digital emblem.
-A digital emblem has a unique combination of security requirements, namely, authentication, accountability, and a property that we call *covert inspection*.
-Covert inspection states that those wishing to authenticate assets as protected must be able to do so without revealing that they may attack unprotected entities.
+This draft explores the problem of how to extend such protection to *digital*, network-connected infrastructure through a digital emblem, and defines the requirements of a digital emblem, emphasizing security requirements.
 
-This document defines the requirements of a digital emblem, emphasizing security requirements, and presents *ADEM*, a decentralized design that implements a digital emblem analogous to the physical emblems of the red cross, crescent, and crystal.
+Notably, a digital emblem has a unique combination of security requirements, namely, authentication, accountability, and a property that we call *covert inspection*.
+Covert inspection states that those wishing to authenticate assets as protected must be able to do so without revealing that they may attack unprotected entities.
 
 --- middle
 
@@ -124,7 +123,7 @@ In particular, covert inspection implies that emblem presentation must be *activ
 Digital emblems must be *authentic*, i.e., a digital emblem only marks assets that *truly enjoy IHL protection*.
 If it were not authentic, verifiers would risk that their lawful, i.e., unprotected, targets could avert attacks by displaying fraudulent emblems, and verifiers would again not inspect emblems.
 
-### Decentralized
+### Decentralized Trust Model
 
 Compliance with existing IHL implies that there must be no fixed set of authorities that can regulate how a digital emblem is used, i.e., it must follow a *decentralized trust model*.
 
