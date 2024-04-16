@@ -77,7 +77,7 @@ We call this property *covert inspection*.
 
 The Geneva Conventions and their *additional protocols* (APs) constitute the core of IHL and establish legal rules on the conduct of armed conflict.
 These rules codify the meaning and usage of protective emblems, namely, the red cross, crescent, and crystal, permitting *protected parties* (PPs) to mark their assets, such as vehicles, personnel, or buildings with these signs during armed conflicts.
-These signs inform other parties about an asset's affiliation with the International Red Cross and Red Crescent Movement (*indicative* use), or about an asset's protected status under IHL (*protective* use).
+These markings inform other parties about an asset's affiliation with the International Red Cross and Red Crescent Movement (*indicative* use), or about an asset's protected status under IHL (*protective* use).
 Actors bound by IHL must respect an asset's protected status and not attack it, except in very limited circumstances.
 
 Since 1949, the Geneva Conventions have been amended and extended.
@@ -115,7 +115,7 @@ Compliance with IHL facilitates the diplomatic process of adopting a digital emb
 ### Covert Inspection
 
 Verifiers never want to reveal themselves as inspecting emblems, which we express in a requirement that we call *covert inspection*.
-If verifiers were to reveal this, their targets could use that knowledge to protect themselves against an imminent attack, and verifiers would not inspect emblems.
+If verifiers were to reveal this, their targets could use that knowledge to protect themselves against an imminent attack, and verifiers would therefore not inspect emblems.
 In particular, covert inspection implies that emblem presentation must be *active*, i.e., verifiers will be sent emblems and need not query them.
 
 ### Authentic
@@ -139,7 +139,7 @@ Compliance with existing IHL additional implies that a digital emblem should wor
 Just as a flag with a red cross can be affixed to and removed from supplies, personnel, buildings, or vehicles, a digital emblem must be applicable to the widest possible range of use cases and digital technologies, and also be easily *removable*.
 Additionally, agents must be able to *verify the presence* of digital emblems.
 With physical emblems, unprotected assets will simply not show the flag of the red cross.
-Likewise, in the digital domain, these assets will not present an invalid emblem, but rather no emblem, and verifiers must be able to decide when no emblem was shown to them.
+Likewise, in the digital domain, these assets will not present an invalid emblem, but rather no emblem, and verifiers must be able to determine when no emblem was shown to them.
 
 ## Use-Case Scenarios
 
@@ -175,7 +175,7 @@ However, marking entire networks should drastically ease the burden of deploymen
 ## Excluded Scenarios
 
 Notably, a digital emblem cannot be applied to dual-use infrastructure, i.e., any type of asset that is used for both services worthy and unworthy of protection.
-A digital emblem must always identify assets who only serve purposes that enjoy protection under IHL.
+A digital emblem must always identify assets that only serve purposes that enjoy protection under IHL.
 
 # Security Considerations
 
