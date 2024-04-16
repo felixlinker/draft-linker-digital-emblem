@@ -142,16 +142,41 @@ Additionally, agents must be able to *verify the presence* of digital emblems.
 With physical emblems, unprotected assets will simply not show the flag of the red cross.
 Likewise, in the digital domain, these assets will not present an invalid emblem, but rather no emblem, and verifiers must be able to decide when no emblem was shown to them.
 
-## Potential Scenarios
+## Use-Case Scenarios
 
-- Personal devices (or more generally, general-purpose computing devices with regularly changing IP addresses)
-- Servers that have a dedicated IP
-- Networks
-- Network-connected medical devices whose software cannot be modified
+In the following, we list a number of use cases that a digital emblem should cover.
+These use cases were derived in collaboration with the ICRC and a broad range of international experts, including the medical sector, the information technology sector, cybersecurity experts, and the military.
+
+It may turn out that there cannot be a single design proposal that covers all use-cases.
+Nevertheless, the number of ways in which a digital emblem can be distributed should be kept minimal.
+The more interfaces supported by a digital emblem, the greater the burden on verifiers, who would need to implement detection on every interface to ensure that they are not attacking a protected asset.
+
+### Personal Devices
+
+A digital emblem should apply to general purpose, personal computing devices such as laptops, smartphones, and tablets.
+Typically, such devices have no stable IP address, but have a powerful operating system and support complex applications well.
+
+### Constrained Devices
+
+A digital emblem should apply to network-connected devices that are constrained in computing power, bandwidth, or cannot be easily modified, for example, medical or IoT devices.
+Typically, such devices are deployed in a fixed environment, however, due to power, hardware, or legal constraints, they cannot support complex applications, or their software might not be modifiable at all.
+
+### Servers
+
+A digital emblem should apply to dedicated and virtual servers, e.g., web or database servers.
+Such servers may or may not have a stable IP or a domain name associated with them.
+
+### Networks
+
+A digital emblem should apply to networks that are controlled by one organization, e.g., the ICRC's internal network.
+Typically, such networks have an IP range associated with them.
+Each device connected to this network should fall into one of the categories above and could thus be marked individually.
+However, marking entire networks should drastically ease the burden of deployment, verification, and distribution.
 
 ## Excluded Scenarios
 
-- Dual-use infrastructure, e.g., in the Cloud
+Notably, a digital emblem cannot be applied to dual-use infrastructure, i.e., any type of asset that is used for both services worthy and unworthy of protection.
+A digital emblem must always identify assets who only serve purposes that enjoy protection under IHL.
 
 # Security Considerations
 
