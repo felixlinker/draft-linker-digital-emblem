@@ -129,9 +129,9 @@ Compliance with existing IHL implies that there must be no fixed set of authorit
 
 ### Accountable Display
 
-Systems without central authorities are prone to suffer from misbehaving authorities.
-Should a digital emblem be codified in law, it is crucial that any illicit display of digital emblems can be prosecuted.
-Hence, to account for misbehaving authorities, a digital emblem must provide *accountability*.
+Systems with a decentralized trust model can suffer from misbehaving parties, in particular misbehaving authorities.
+Should a digital emblem be codified in law, it is crucial that any illicit display of digital emblems can be provably attributed to misbehaving parties such that they can be prosecuted.
+Hence, a digital emblem must provide *accountability*.
 
 ### Removable & Verifiable Presence
 
@@ -141,10 +141,18 @@ Additionally, agents must be able to *verify the presence* of digital emblems.
 With physical emblems, unprotected assets will simply not show the flag of the red cross.
 Likewise, in the digital domain, these assets will not present an invalid emblem, but rather no emblem, and verifiers must be able to determine when no emblem was shown to them.
 
+## Sketch of Solution Space
+
+Three axes:
+
+- Identification
+- Distribution
+- Trust model
+
 ## Use-Case Scenarios
 
 In the following, we list a number of use cases that a digital emblem should cover.
-These use cases were derived in collaboration with the ICRC and a broad range of international experts, including the medical sector, the information technology sector, cybersecurity experts, and the military.
+These use cases were derived in collaboration with the ICRC and a broad range of international experts, including the medical sector, the information technology sector, the military sector, and cybersecurity experts.
 
 It may turn out that there cannot be a single design proposal that covers all use-cases.
 Nevertheless, the number of ways in which a digital emblem can be distributed should be kept minimal.
