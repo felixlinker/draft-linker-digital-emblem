@@ -120,7 +120,7 @@ Compliance with IHL facilitates the diplomatic process of adopting a digital emb
 
 Verifiers never want to reveal themselves as inspecting emblems, which we express in a requirement that we call *covert inspection*.
 If verifiers were to reveal this, their targets could use that knowledge to protect themselves against an imminent attack, and verifiers would therefore not inspect emblems.
-In particular, covert inspection implies that emblem presentation must be *active*, i.e., verifiers will be sent emblems and need not query them.
+In particular, covert inspection implies that emblem presentation must be *active*, i.e., verifiers will be sent emblems and need not query them explicitly.
 
 ### Authentic
 
@@ -152,7 +152,7 @@ These use cases were derived in collaboration with the ICRC and a broad range of
 
 It may turn out that there cannot be a single design proposal that covers all use-cases.
 Nevertheless, the number of ways in which a digital emblem can be distributed should be kept minimal.
-The more interfaces supported by a digital emblem, the greater the burden on verifiers, who would need to implement detection on every interface to ensure that they are not attacking a protected asset.
+The more interfaces supported by a digital emblem, the greater the burden on verifiers, who would need to check every interface to ensure that they are not attacking a protected asset.
 
 ### Personal Devices
 
