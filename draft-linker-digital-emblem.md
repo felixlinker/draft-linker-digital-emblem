@@ -65,6 +65,7 @@ Therefore, a digital emblem must be designed so that one can hold misbehaving pa
 Protection under IHL stems from law, and laws must be enforceable to have an effect.
 4. Those wishing to authenticate assets must be able to verify protective emblems in a way that does not call attention to the fact that they are screening potential targets.
 We call this property *covert inspection*.
+This is analogous to looking at a physical emblem from a distance: A flag of a red cross does similarly not know when its being looked at.
 
 
 # Conventions and Definitions
