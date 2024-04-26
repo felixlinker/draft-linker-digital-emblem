@@ -46,7 +46,7 @@ International Humanitarian Law (IHL) mandates that military units must not attac
 The emblems of the red cross, red crescent, and red crystal are used to mark *physical* infrastructure (e.g., by a red cross painted on a hospital's rooftop), thereby enabling military units to identify those assets as protected under IHL.
 The International Committee of the Red Cross (ICRC) recently posed the question: How can one extend such markings to *digital* infrastructure such as servers and networks? <!-- TODO: Cite report -->
 
-Marking digital assets as protected can prevent cyberattacks on humanitarian infrastructure.
+The goal of a digital emblem is to prevent cyberattacks on humanitarian infrastructure.
 Parties to armed conflicts are bound by IHL, and are thus required by law to respect the protective emblems.
 Other actors may not be bound by IHL, but could still respect a digital emblem.
 Either out of respect for the humanitarian cause or to avoid unwanted attention when attacking marked assets.
@@ -60,7 +60,7 @@ Therefore, a digital emblem must be designed so that parties can be held account
 Protection under IHL stems from law, and laws must be enforceable to have an effect.
 4. Those wishing to authenticate assets must be able to verify protective emblems in a way that does not call attention to the fact that they are screening potential targets.
 We call this property *covert inspection*.
-This is analogous to looking at a physical emblem from a distance: A flag of a red cross does similarly not know when its being looked at.
+This is analogous to looking at a physical emblem from a distance: A flag of a red cross does similarly not raise attention to the fact that its being looked at.
 
 
 # Conventions and Definitions
@@ -80,7 +80,7 @@ These emblems inform other parties that they must not be attacked.
 In its indicative function, an emblem signals affiliation with the International Red Cross and Red Crescent Movement.
 
 Since 1949, the Geneva Conventions have been revised.
-AP I contains additional regulations on how parties to conflict could communicate their status using technical means, like radar transponders and radio signals.
+AP I contains additional regulations on how parties to conflict can communicate their status using technical means, like radar transponders and radio signals.
 Recognizing that technology may progress rapidly, the amendment process for AP I is streamlined.
 For example, this process could begin through expert consultations convened by the ICRC.
 
@@ -108,8 +108,7 @@ The purpose of a digital emblem is to prevent attacks on protected assets by inf
 (Note that IHL also permits the indicative use of an emblem, we subsume this case under the protective use of an emblem for clarity.)
 The digital emblem's requirements are derived from two important insights.
 (i) A digital emblem critically requires adoption by verifiers, which (by definition) intend to attack assets not protected under IHL.
-(ii) A digital emblem should comply with existing IHL.
-Compliance with IHL facilitates the diplomatic process of adopting a digital emblem.
+(ii) A digital emblem should comply with existing IHL, which facilitates the diplomatic process of adopting a digital emblem.
 
 ### Covert Inspection
 
