@@ -36,34 +36,34 @@ informative:
 
 --- abstract
 
-In times of armed conflict, the emblems of the red cross, red crescent, and red crystal are used to mark *physical* infrastructure.
+In times of armed conflict, the protective emblems of the red cross, red crescent, and red crystal are used to mark *physical* infrastructure.
 This enables military units to identify assets as protected under international humanitarian law to avoid attacking them.
-This draft explores the problem of how to extend such protection to *digital*, network-connected infrastructure through a digital emblem, and defines the requirements of a digital emblem, emphasizing security requirements.
+This draft explores how one could apply the protective emblems to *digital*, network-connected infrastructure using a *digital emblem*, and defines the requirements of a digital emblem, emphasizing security requirements.
 
 Notably, a digital emblem has a unique combination of security requirements, namely, authentication, accountability, and a property that we call *covert inspection*.
-Covert inspection states that those wishing to authenticate assets as protected must be able to do so without revealing that they may attack unprotected entities.
+Covert inspection means that those wishing to authenticate assets as protected must be able to do so without revealing that they may attack unprotected entities.
 
 --- middle
 
 # Introduction
 
-International Humanitarian Law (IHL) mandates that military units must never attack medical facilities, such as hospitals.
+International Humanitarian Law (IHL) mandates that military units must not attack medical facilities, such as hospitals.
 The emblems of the red cross, red crescent, and red crystal are used to mark *physical* infrastructure (e.g., by a red cross painted on a hospital's rooftop), thereby enabling military units to identify those assets as protected under IHL.
 The International Committee of the Red Cross (ICRC) recently posed the question: How can one extend such markings to *digital* infrastructure such as servers and networks? <!-- TODO: Cite report -->
 
 There is the hope that marking digital assets as protected can prevent cyberattacks on humanitarian infrastructure.
-State-actors are bound to IHL, and are thus required by law to respect the protective emblems.
-Non-state-actors are not bound to IHL, but could still respect a digital emblem.
+Parties to armed conflicts are bound by IHL, and are thus required by law to respect the protective emblems.
+Other actors may not be bound by IHL, but could still respect a digital emblem.
 Either out of respect for the humanitarian cause or to avoid unwanted attention when attacking marked assets.
 A digital emblem can only live up to this hope, though, if it meets a unique combination of requirements.
 
-1. Digital emblems require authentication as assets must not be able to fake protection, for example, by transferring markings from medical to military infrastructures.
-2. Protective markings must be decentralized, i.e., there must be no central authorities that govern the use or distribution of digital emblems.
+1. Digital emblems require authentication as assets must not be able to fake protection, for example, by transferring emblems from medical to military infrastructures.
+2. Protective emblems must be decentralized, i.e., there must be no central authorities that govern the use or distribution of digital emblems.
 What complies with IHL is subject to debate, and different parties (possibly at war with one another) must be able to express conflicting views and must not need to trust the same parties.
 3. The Web PKI has shown that a system of decentralized authorities is prone to misuse.
 Therefore, a digital emblem must be designed so that one can hold misbehaving parties accountable whenever they mark unprotected infrastructure.
 Protection under IHL stems from law, and laws must be enforceable to have an effect.
-4. Those wishing to authenticate assets must be able to verify protective markings in a way that does not call attention to the fact that they are screening potential targets.
+4. Those wishing to authenticate assets must be able to verify protective emblems in a way that does not call attention to the fact that they are screening potential targets.
 We call this property *covert inspection*.
 
 
@@ -75,15 +75,18 @@ We call this property *covert inspection*.
 
 ## Legal and Historical Background
 
-The Geneva Conventions and their *additional protocols* (APs) constitute the core of IHL and establish legal rules on the conduct of armed conflict.
-These rules codify the meaning and usage of protective emblems, namely, the red cross, crescent, and crystal, permitting *protected parties* (PPs) to mark their assets, such as vehicles, personnel, or buildings with these signs during armed conflicts.
-These markings inform other parties about an asset's affiliation with the International Red Cross and Red Crescent Movement (*indicative* use), or about an asset's protected status under IHL (*protective* use).
-Actors bound by IHL must respect an asset's protected status and not attack it, except in very limited circumstances.
+The Geneva Conventions and their *Additional Protocols* (APs) constitute the core of IHL and establish legal rules on the conduct of armed conflict.
+These Conventions and Protocol establish the meaning and usage of protective emblems, namely, the red cross, crescent, and crystal.
+
+The emblems have can have a protective and an indicative function.
+In its protective function, parties to conflict may apply an emblem to assets that exclusively undertake medical functions, such as vehicles, personnel, or buildings.
+These emblems inform other parties that they must not be attacked.
+In its indicative function, an emblem signals affiliation with the International Red Cross and Red Crescent Movement.
 
 Since 1949, the Geneva Conventions have been amended and extended.
-AP I, for example, contains additional regulations on how PPs could communicate their status using technical means, like radar transponders and radio signals.
-Recognizing that technology may progress rapidly, AP I allows for the ICRC to convene state experts to review and suggest updates to the technical means by which the PPs may be identified.
-In order to initiate discussions among states, the ICRC proposed the idea of a digital emblem on an international stage. <!-- TODO: Cite report -->
+AP I contains additional regulations on how parties to conflict could communicate their status using technical means, like radar transponders and radio signals.
+Recognizing that technology may progress rapidly, the amendment process for AP I is streamlined.
+For example, this process could begin through expert consultations by the ICRC.
 
 ## Problem Domain
 
@@ -138,7 +141,7 @@ Hence, a digital emblem must provide *accountability*.
 Compliance with existing IHL additional implies that a digital emblem should work similarly to physical emblems.
 Just as a flag with a red cross can be affixed to and removed from supplies, personnel, buildings, or vehicles, a digital emblem must be applicable to the widest possible range of use cases and digital technologies, and also be easily *removable*.
 Additionally, agents must be able to *verify the presence* of digital emblems.
-With physical emblems, unprotected assets will simply not show the flag of the red cross.
+With physical emblems, unprotected assets will simply not show the red cross.
 Likewise, in the digital domain, these assets will not present an invalid emblem, but rather no emblem, and verifiers must be able to determine when no emblem was shown to them.
 
 ## Sketch of Solution Space
