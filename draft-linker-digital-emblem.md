@@ -182,8 +182,8 @@ A digital emblem must always identify assets that only serve purposes that enjoy
 
 # Security Considerations
 
-TODO Security
-
+The requirements "covert inspection", "authentic", and "accountable display" are all security requirements, i.e., one must consider powerful adversaries trying to break these requirements when evaluating any proposal for a digital emblem.
+The original, academic paper proposing *ADEM: An Authentic Digital Emblem* formally verified ADEM's security, and any subsequent proposal should be rigorously analyzed as well.
 
 # IANA Considerations
 
