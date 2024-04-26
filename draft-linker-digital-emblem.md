@@ -144,14 +144,6 @@ Additionally, agents must be able to *verify the presence* of digital emblems.
 With physical emblems, unprotected assets will simply not show the red cross.
 Likewise, in the digital domain, these assets will not present an invalid emblem, but rather no emblem, and verifiers must be able to determine when no emblem was shown to them.
 
-## Sketch of Solution Space
-
-Three axes:
-
-- Identification
-- Distribution
-- Trust model
-
 ## Use-Case Scenarios
 
 In the following, we list a number of use cases that a digital emblem should cover.
