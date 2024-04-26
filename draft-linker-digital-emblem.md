@@ -40,8 +40,8 @@ informative:
 
 --- abstract
 
-In times of armed conflict, the protective emblems of the red cross, red crescent, and red crystal are used to mark *physical* infrastructure.
-This enables military units to identify assets as protected under international humanitarian law to avoid attacking them.
+In times of armed conflict, the protective emblems of the red cross, red crescent, and red crystal are used to mark *physical* assets.
+This enables military units to identify assets as respected and protected under international humanitarian law.
 This draft explores how one could apply the protective emblems to *digital*, network-connected infrastructure using a *digital emblem*, and defines the requirements of a digital emblem, emphasizing security requirements.
 
 Notably, a digital emblem has a unique combination of security requirements, namely, authentication, accountability, and a property that we call *covert inspection*.
@@ -55,17 +55,17 @@ International Humanitarian Law (IHL) mandates that military units must not attac
 The emblems of the red cross, red crescent, and red crystal are used to mark *physical* infrastructure (e.g., by a red cross painted on a hospital's rooftop), thereby enabling military units to identify those assets as protected under IHL.
 The International Committee of the Red Cross (ICRC) recently posed the question: How can one extend such markings to *digital* infrastructure such as servers and networks? <!-- TODO: Cite report -->
 
-There is the hope that marking digital assets as protected can prevent cyberattacks on humanitarian infrastructure.
+Marking digital assets as protected can prevent cyberattacks on humanitarian infrastructure.
 Parties to armed conflicts are bound by IHL, and are thus required by law to respect the protective emblems.
 Other actors may not be bound by IHL, but could still respect a digital emblem.
 Either out of respect for the humanitarian cause or to avoid unwanted attention when attacking marked assets.
-A digital emblem can only live up to this hope, though, if it meets a unique combination of requirements.
+A digital emblem can only serve this purpose, though, if it meets a unique combination of requirements.
 
 1. Digital emblems require authentication as assets must not be able to fake protection, for example, by transferring emblems from medical to military infrastructures.
 2. Protective emblems must be decentralized, i.e., there must be no central authorities that govern the use or distribution of digital emblems.
-What complies with IHL is subject to debate, and different parties (possibly at war with one another) must be able to express conflicting views and must not need to trust the same parties.
-3. The Web PKI has shown that a system of decentralized authorities is prone to misuse.
-Therefore, a digital emblem must be designed so that one can hold misbehaving parties accountable whenever they mark unprotected infrastructure.
+Under IHL, states themselves determine which parties and assets may display the emblem under their authority.
+3. Systems with a decentralized trust model are prone to misuse.
+Therefore, a digital emblem must be designed so that parties can be held accountable whenever they mark unprotected infrastructure.
 Protection under IHL stems from law, and laws must be enforceable to have an effect.
 4. Those wishing to authenticate assets must be able to verify protective emblems in a way that does not call attention to the fact that they are screening potential targets.
 We call this property *covert inspection*.
@@ -88,24 +88,24 @@ In its protective function, parties to conflict may apply an emblem to assets th
 These emblems inform other parties that they must not be attacked.
 In its indicative function, an emblem signals affiliation with the International Red Cross and Red Crescent Movement.
 
-Since 1949, the Geneva Conventions have been amended and extended.
+Since 1949, the Geneva Conventions have been revised.
 AP I contains additional regulations on how parties to conflict could communicate their status using technical means, like radar transponders and radio signals.
 Recognizing that technology may progress rapidly, the amendment process for AP I is streamlined.
-For example, this process could begin through expert consultations by the ICRC.
+For example, this process could begin through expert consultations convened by the ICRC.
 
 ## Problem Domain
 
 The concept of a digital emblem touches a variety of stakeholders.
-First and foremost, there are *protected parties* (PPs).
-PPs operate in areas of conflict and conduct operations that enjoy protection under IHL utilizing *protected digital assets*, such as mobile devices (tablets, smartphones), servers (both virtual and dedicated), processes such as web servers, or a PP's intranet.
-Prior to commencing their operations, PPs must seek permission from competent *authorities*.
-When they are given permission, PPs can apply digital emblems to their protected assets, which *present* them to three types of *agents*.
+First and foremost, there are *emblem issuers (EIs)*, groups that provide medical services or conduct humanitarian operations such as military forces or organizations like Doctors Without Borders.
+As part of their activities, they may display the protective emblems on their *protected digital assets*, such as mobile devices (tablets, smartphones), servers (both virtual and dedicated), or an intranet.
+Prior to commencing their operations, EIs must seek permission from competent *authorities*.
+When they are given permission, EIs can apply digital emblems to their protected assets, which *present* them to three types of *agents*.
 
 *Regular users* of an asset do not pay attention to the emblem, for example, when they visit a website.
 *Verifiers* pay attention to the emblem and only wish to attack lawful (under IHL) targets.
 They are typically part of an armed force engaged in a conflict.
 We can assume that most verifiers (typically military units) will be associated with an authority (typically their nation state or an ally), and, hence, that such verifiers can obtain the authentic public keys of their affiliated authorities through secure, out-of-band channels.
-*Adversaries* are willing to violate IHL and search to abuse digital emblems.
+Finally, we define *adversaries* as those agents that are willing to violate IHL and search to abuse digital emblems.
 For example, they may seek to issue emblems to non-protected assets.
 
 ## Requirements
@@ -118,7 +118,7 @@ The purpose of a digital emblem is to prevent attacks on protected assets by inf
 The digital emblem's requirements are derived from two important insights.
 (i) A digital emblem critically requires adoption by verifiers, which (by definition) intend to attack assets not protected under IHL.
 (ii) A digital emblem should comply with existing IHL.
-Compliance with IHL facilitates the diplomatic process of adopting a digital emblem, possibly integrating it into AP I.
+Compliance with IHL facilitates the diplomatic process of adopting a digital emblem.
 
 ### Covert Inspection
 
@@ -128,7 +128,7 @@ In particular, covert inspection implies that emblem presentation must be *activ
 
 ### Authentic
 
-Digital emblems must be *authentic*, i.e., a digital emblem only marks assets that *truly enjoy IHL protection*.
+Digital emblems must be *authentic*, i.e., a digital emblem only marks assets that are used to provide medical services or conduct humanitarian operations.
 If it were not authentic, verifiers would risk that their lawful, i.e., unprotected, targets could avert attacks by displaying fraudulent emblems, and verifiers would again not inspect emblems.
 
 ### Decentralized Trust Model
@@ -137,14 +137,14 @@ Compliance with existing IHL implies that there must be no fixed set of authorit
 
 ### Accountable Display
 
-Systems with a decentralized trust model can suffer from misbehaving parties, in particular misbehaving authorities.
-Should a digital emblem be codified in law, it is crucial that any illicit display of digital emblems can be provably attributed to misbehaving parties such that they can be prosecuted.
+Systems with a decentralized trust model can suffer from misuse.
+Should a digital emblem be codified in law, it is crucial that any unlawful display of digital emblems can be provably attributed to the respective parties such that they can be prosecuted.
 Hence, a digital emblem must provide *accountability*.
 
 ### Removable & Verifiable Presence
 
-Compliance with existing IHL additional implies that a digital emblem should work similarly to physical emblems.
-Just as a flag with a red cross can be affixed to and removed from supplies, personnel, buildings, or vehicles, a digital emblem must be applicable to the widest possible range of use cases and digital technologies, and also be easily *removable*.
+A digital emblem should work just as the physical emblems.
+Just as a flag with a red cross can be displayed and removed at any time, a digital emblem must be applicable to the widest possible range of use cases and digital technologies, and also be easily *removable*.
 Additionally, agents must be able to *verify the presence* of digital emblems.
 With physical emblems, unprotected assets will simply not show the red cross.
 Likewise, in the digital domain, these assets will not present an invalid emblem, but rather no emblem, and verifiers must be able to determine when no emblem was shown to them.
@@ -182,7 +182,7 @@ However, marking entire networks should drastically ease the burden of deploymen
 
 ## Excluded Scenarios
 
-Notably, a digital emblem cannot be applied to dual-use infrastructure, i.e., any type of asset that is used for both services worthy and unworthy of protection.
+Notably, a digital emblem cannot be applied to infrastructure that is used for both services worthy and unworthy of protection.
 A digital emblem must always identify assets that only serve purposes that enjoy protection under IHL.
 
 # Security Considerations
