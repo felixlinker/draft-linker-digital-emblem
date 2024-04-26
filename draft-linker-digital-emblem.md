@@ -79,7 +79,7 @@ This is analogous to looking at a physical emblem from a distance: A flag of a r
 The Geneva Conventions and their *Additional Protocols* (APs) constitute the core of IHL and establish legal rules on the conduct of armed conflict.
 These Conventions and Protocol establish the meaning and usage of protective emblems, namely, the red cross, crescent, and crystal.
 
-The emblems have can have a protective and an indicative function.
+The emblems have a protective and an indicative function.
 In its protective function, parties to conflict may apply an emblem to assets that exclusively undertake medical functions, such as vehicles, personnel, or buildings.
 These emblems inform other parties that they must not be attacked.
 In its indicative function, an emblem signals affiliation with the International Red Cross and Red Crescent Movement.
@@ -183,7 +183,7 @@ A digital emblem must always identify assets that only serve purposes that enjoy
 
 # Security Considerations
 
-The requirements "covert inspection", "authentic", and "accountable display" are all security requirements, i.e., one must consider powerful adversaries trying to break these requirements when evaluating any proposal for a digital emblem.
+The requirements "covert inspection", "authentic", and "accountable display" are all security requirements, i.e., one must consider powerful adversaries trying to break these requirements when evaluating a proposal for a digital emblem.
 The original, academic paper proposing *ADEM: An Authentic Digital Emblem* formally verified ADEM's security, and any subsequent proposal should be rigorously analyzed as well.
 
 # IANA Considerations
