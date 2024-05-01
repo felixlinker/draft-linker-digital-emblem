@@ -23,6 +23,10 @@ author:
     fullname: David Basin
     organization: ETH Zurich
     email: flinker@inf.ethz.ch
+ -
+    fullname: Mauro Vignati
+    organization: ICRC
+    email: mvignati@icrc.org
 
 normative:
 
