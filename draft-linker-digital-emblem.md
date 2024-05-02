@@ -1,6 +1,6 @@
 ---
-title: "An Authentic Digital Emblem"
-abbrev: "ADEM"
+title: "Problem Statement for a Digital Emblem"
+abbrev: "PS-DE"
 category: info
 
 docname: draft-linker-digital-emblem-latest
