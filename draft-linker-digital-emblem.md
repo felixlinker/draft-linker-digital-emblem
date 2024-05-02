@@ -9,8 +9,8 @@ number:
 date:
 consensus: true
 v: 3
-area: AREA
-workgroup: TBD
+# area: AREA
+# workgroup: TBD
 keyword:
 venue:
 
