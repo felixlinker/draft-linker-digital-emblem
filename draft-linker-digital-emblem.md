@@ -3,7 +3,7 @@ title: "An Authentic Digital Emblem"
 abbrev: "ADEM"
 category: info
 
-docname: draft-linker-digital-emblem
+docname: draft-linker-digital-emblem-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
