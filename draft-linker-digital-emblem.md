@@ -31,6 +31,38 @@ author:
 normative:
 
 informative:
+   ADEM:
+      target: https://dl.acm.org/doi/10.1145/3576915.3616578
+      title: "ADEM: An Authentic Digital EMblem"
+      author:
+         -
+            name: Felix Linker
+            org: Department of Computer Science, ETH Zurich
+         -
+            name: David Basin
+            org: Department of Computer Science, ETH Zurich
+      date: November 2023
+      seriesinfo:
+         CCS '23: Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security
+   DE-REPORT:
+      target: https://www.icrc.org/en/document/icrc-digital-emblems-report
+      title: "Digitalizing the Red Cross, Red Crescent and Red Crystal Emblems"
+      author:
+         -
+            name: Tilman Rodenhäuser
+            org: ICRC
+         -
+            name: Mauro Vignati
+            org: ICRC
+         -
+            name: Larry Maybee
+            org: Australian Red Cross
+         -
+            name: Hollie Johnston
+            org: Australian Red Cross
+      date: November 2022
+      format:
+         PDF: https://www.icrc.org/en/download/file/253888/icrc_digitalizing_the_rcrc_emblem.pdf
 
 
 --- abstract
@@ -48,7 +80,7 @@ Covert inspection means that those wishing to authenticate assets as protected m
 
 International Humanitarian Law (IHL) mandates that military units must not attack medical facilities, such as hospitals.
 The emblems of the red cross, red crescent, and red crystal are used to mark *physical* infrastructure (e.g., by a red cross painted on a hospital's rooftop), thereby enabling military units to identify those assets as protected under IHL.
-The International Committee of the Red Cross (ICRC) recently posed the question: How can one extend such markings to *digital* infrastructure such as servers and networks? <!-- TODO: Cite report -->
+The International Committee of the Red Cross (ICRC) recently posed the question: How can one extend such markings to *digital* infrastructure such as servers and networks? {{DE-REPORT}}
 
 The goal of a digital emblem is to prevent cyberattacks on humanitarian infrastructure.
 Parties to armed conflicts are bound by IHL, and are thus required by law to respect the protective emblems.
@@ -105,7 +137,7 @@ For example, they may seek to issue emblems to non-protected assets.
 
 ## Requirements
 
-The digital emblem's requirements were adapted from the ICRC's report on digital emblems.
+The digital emblem's requirements were adapted from the ICRC's report on digital emblems {{DE-REPORT}}.
 However, whereas the report introduces requirements on a much higher, abstract level and without a detailed consideration of security, we present a comprehensive list of actionable, technical requirements.
 
 The purpose of a digital emblem is to prevent attacks on protected assets by informing other parties about their status under IHL.
@@ -194,5 +226,6 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
+Parts of this draft are based on the initial academic publication describing the proposal *ADEM: An Authentic Digital EMblem* {{ADEM}}.
 Initial work on this project was funded by the Werner Siemens-Stiftung (WSS).
 We thank the WSS for their generous support.
