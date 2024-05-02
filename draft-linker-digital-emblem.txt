@@ -10,7 +10,7 @@ Expires: 3 November 2024                                      M. Vignati
                                                               2 May 2024
 
 
-                      An Authentic Digital Emblem
+                 Problem Statement for a Digital Emblem
                    draft-linker-digital-emblem-latest
 
 Abstract
