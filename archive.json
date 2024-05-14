@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-05-12T01:26:00.092784+00:00",
+  "timestamp": "2024-05-14T01:20:09.257095+00:00",
   "repo": "felixlinker/draft-linker-digital-emblem",
   "labels": [
     {
@@ -50,5 +50,71 @@
     }
   ],
   "issues": [],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOL2KzRM5vL6aX",
+      "title": "Add risks of emblems as Deployment Considerations",
+      "url": "https://github.com/felixlinker/draft-linker-digital-emblem/pull/1",
+      "state": "OPEN",
+      "author": "mstojens",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-05-12T18:32:50Z",
+      "updatedAt": "2024-05-13T07:46:27Z",
+      "baseRepository": "felixlinker/draft-linker-digital-emblem",
+      "baseRefName": "main",
+      "baseRefOid": "dc263010e38558f1401a2b1f9a062071d630686c",
+      "headRepository": "mstojens/draft-linker-digital-emblem",
+      "headRefName": "patch-1",
+      "headRefOid": "2cfa12fbe608ace2e00c1f286e45b746c089eab9",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOL2KzRM56Tfz2",
+          "commit": {
+            "abbreviatedOid": "2cfa12f"
+          },
+          "author": "felixlinker",
+          "authorAssociation": "OWNER",
+          "state": "CHANGES_REQUESTED",
+          "body": "",
+          "createdAt": "2024-05-13T07:41:26Z",
+          "updatedAt": "2024-05-13T07:46:27Z",
+          "comments": [
+            {
+              "originalPosition": 26,
+              "body": "I don't understand what this paragraph is trying to say. What do you want to say when pointing out the connection between covert inspection and the \"observation of what behavior the emblem-bearing infrastructure has\"?",
+              "createdAt": "2024-05-13T07:41:26Z",
+              "updatedAt": "2024-05-13T07:46:27Z"
+            },
+            {
+              "originalPosition": 29,
+              "body": "For a document that has ICRC authors on it, we cannot talk about \"attacks\" for legal reasons. I think we should always use \"asset X is [not] protected under IHL\".\r\n\r\nBesides that: What's the TODO here? Do you want to add a paragraph discussing this? If yes, I don't entirely understand what \"this\" is.",
+              "createdAt": "2024-05-13T07:42:44Z",
+              "updatedAt": "2024-05-13T07:46:27Z"
+            },
+            {
+              "originalPosition": 35,
+              "body": "This is supposed to referenced to the internet shutdown discussions, right?",
+              "createdAt": "2024-05-13T07:45:34Z",
+              "updatedAt": "2024-05-13T07:46:27Z"
+            },
+            {
+              "originalPosition": 41,
+              "body": "Isn't this a straight-forward attack by negating req. authentic? If yes, it might be worth generalizing this paragraph to discuss the inherent risks of our trust model: People can always claim bullshit, but we try to get them through accountability.",
+              "createdAt": "2024-05-13T07:46:18Z",
+              "updatedAt": "2024-05-13T07:46:27Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
