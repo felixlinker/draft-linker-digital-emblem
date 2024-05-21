@@ -44,6 +44,20 @@ informative:
       date: November 2023
       seriesinfo:
          CCS '23: Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security
+   ADEM-SPEC:
+      target: https://adem-wg.github.io/adem-spec/draft-adem-wg-adem-core.html
+      title: An Authenticated Digital EMblem - Core Specification
+      author:
+         -
+            name: Felix Linker
+            org: ETH Zurich
+         -
+            name: Dennis Jackson
+            org: None
+         -
+            name: David Basin
+            org: ETH Zurich
+      date: 28 August 2023
    DE-REPORT:
       target: https://www.icrc.org/en/document/icrc-digital-emblems-report
       title: "Digitalizing the Red Cross, Red Crescent and Red Crystal Emblems"
@@ -98,6 +112,10 @@ Protection under IHL stems from law, and laws must be enforceable to have an eff
 We call this property *covert inspection*.
 This is analogous to looking at a physical emblem from a distance: A flag of a red cross does similarly not raise attention to the fact that its being looked at.
 
+Work on the digital emblem dates back multiple years.
+In 2020, the ICRC invited two research institutions, Johns Hopkins University Applied Physics Laboratory (APL) and the Centre for Cyber Trust (CECYT), a joint research centre between ETH Zurich and Bonn University, to develop technical proposals for a digital emblem.
+These proposals were presented to and evaluated by a group of international experts at the invitation of the ICRC {{DE-REPORT}}.
+We discuss the proposed designs in {{proposals}}.
 
 # Conventions and Definitions
 
@@ -211,6 +229,23 @@ However, marking entire networks should drastically ease the burden of deploymen
 
 Notably, a digital emblem cannot be applied to infrastructure that is used for both services worthy and unworthy of protection.
 A digital emblem must always identify assets that only serve purposes that enjoy protection under IHL.
+
+# Proposed Designs for a Digital Emblem {#proposals}
+
+Two designs were proposed to solve the problem of a digital emblem.
+First, JHU APL proposed a DNS-based solution for a digital emblem {{?I-D.haberman-digital-emblem}}.
+Second, CECYT (a joint endeavour between ETH Zurich and Bonn University) proposed *An Authentic Digital EMblem (ADEM)*, which was initially described in an academic publication {{ADEM}}, but was also specified technically {{ADEM-SPEC}} and has openly accessible, working prototypes ([Go library and CLI](https://github.com/adem-wg/adem-proto), [Browser extension](https://github.com/adem-wg/adem-chrome)).
+We focus here on ADEM as it was selected by the ICRC as the most suitable proposal for a digital emblem.
+
+ADEM was designed following the requirements laid out in this draft.
+ADEM follows a decentralized trust model and utilizes existing infrastructure wherever possible, e.g., it provides accountability through the Certificate Transparency infrastructure {{?RFC6962}}.
+ADEM was designed to be distributed over many channels and as such is not bound to one mode of transportation.
+The academic paper foresees distribution of digital emblems via TLS, DNS, and UDP.
+Next to its prototype, ADEM's security was thoroughly evaluated and formal proofs of security are described in the academic publication.
+
+Once there is consensus on the scope of a digital emblem, the plan is to propose ADEM as a basis for designing a digital emblem.
+Although ADEM was evaluated on many occasions, it is subject to change.
+In particular, it must be investigated whether it fits the needs of all stakeholders of a digital emblem.
 
 # Security Considerations
 
