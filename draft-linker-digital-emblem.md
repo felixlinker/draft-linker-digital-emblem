@@ -211,35 +211,24 @@ However, marking entire networks should drastically ease the burden of deploymen
 Notably, a digital emblem cannot be applied to infrastructure that is used for both services worthy and unworthy of protection.
 A digital emblem must always identify assets that only serve purposes that enjoy protection under IHL.
 
-# Deployment Considerations
+# Considerations of Potential Risks
 
-Because ADEM allows digital infrastructure to be labeled with legal protections, there are opportunities for
-accidental and malicious misuse that cannot always be verified in a technical manner. The {{reqs}} section
-provides ADEM design requirements to ensure that the standard is capable of being deployed and utilized
-responsibly. However, because the emblems represent legal concepts, it is not always possible for automated
-systems to handle misuse. The potential misuses defined here are intended to act as examples to guide
-ADEM deployers and verifiers in the larger context of their other technologies.
+Because digital emblems label digital infrastructure as legally protected, misuse of a digital emblem may
+not always be automatically detectable. In this section, we discuss two examples of potential misuse and
+how the {{reqs}} section aims ensure that this standard is utilized responsibly.
 
-In all cases where ADEM is deployed, it should be noted that covert inspection MAY include more than
-verifying the presence and authentication of an emblem, but also observation of what behavior the
-emblem-bearing infrastructure has. This document does not enumerate the possibilities, but it is worth
-pointing out that the end goal of providing proper authentication of emblem issuing authorities is to
-enable combatants to hold emblem-bearers accountable should misuse be detected. 
+First, a nation state could misuse a digital emblem to wrongfully protect infrastructure used to enforce
+Internet censorship or shutdowns for its population. Second, technology vendors that provide online services
+or resources might maliciously or accidentally apply digital emblems to not only IHL-protected assets but
+their general infrastructure that hosts this and other services. In both cases, such misuse would abuse and
+potentially undermine combatants' and resistance movements' respect for IHL only to label one's own
+infrastructure, which even may actively harm human rights.
 
-TODO: by standard, I doubt we want to say anything like "MUST NOT attack emblem bearers, but MAY if
-out-of-band verification shows the emblem is invalidly applied" but... that's the truth, right?
-
-## Protecting Oppressive Infrastructure
-
-A misuse with negative human rights effects would be a nation state applying ADEM to the infrastructure it uses
-to enforce Internet censorship or shutdowns for its population. This would use combatants' and resistance movements'
-respect for IHL to preserve infrastructure that actively harms human rights (TODO: hrpc ref?).
-
-## Over-scoping Vendor Infrastructure
-
-Technology vendors that provide online services or resources might over-apply ADEM to label not only the
-specific infrastructure they provide to an IHL-protected party, but the general infrastructure beyond that.
-This would be a misuse of respect for IHL to reduce the vendor's risk of cyberattack, to its profit.
+In all cases where a digital emblem is deployed, it should be noted that verifying a digital emblem
+MAY include more than verifying its presence and authenticity. Verifiers MAY also observe other behavior
+of the emblem-bearing asset, applying heuristics to check whether its plausible that the asset displays a
+digital emblem. Additionally, we point out that digital emblem's mechanism of providing authentication
+additionally enables combatants to hold emblem-bearers accountable should misuse be detected.
 
 # Security Considerations
 
