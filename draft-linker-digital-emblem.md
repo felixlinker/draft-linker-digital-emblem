@@ -135,7 +135,7 @@ We can assume that most verifiers (typically military units) will be associated 
 Finally, we define *adversaries* as those agents that are willing to violate IHL and search to abuse digital emblems.
 For example, they may seek to issue emblems to non-protected assets.
 
-## Requirements {reqs}
+## Requirements {#reqs}
 
 The digital emblem's requirements were adapted from the ICRC's report on digital emblems {{DE-REPORT}}.
 However, whereas the report introduces requirements on a much higher, abstract level and without a detailed consideration of security, we present a comprehensive list of actionable, technical requirements.
