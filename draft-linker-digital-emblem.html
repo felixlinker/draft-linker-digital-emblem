@@ -25,7 +25,7 @@ Covert inspection means that those wishing to authenticate assets as protected m
     intervaltree 3.1.0
     Jinja2 3.1.2
     lxml 4.9.3
-    platformdirs 4.2.0
+    platformdirs 4.2.1
     pycountry 22.3.5
     PyYAML 6.0.1
     requests 2.31.0
@@ -1034,7 +1034,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Linker, et al.</td>
-<td class="center">Expires 3 November 2024</td>
+<td class="center">Expires 22 November 2024</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1047,12 +1047,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-linker-digital-emblem-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-05-02" class="published">2 May 2024</time>
+<time datetime="2024-05-21" class="published">21 May 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2024-11-03">3 November 2024</time></dd>
+<dd class="expires"><time datetime="2024-11-22">22 November 2024</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1098,7 +1098,7 @@ Covert inspection means that those wishing to authenticate assets as protected m
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 3 November 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 22 November 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1313,8 +1313,9 @@ The digital emblem's requirements are derived from two important insights.
           <h4 id="name-covert-inspection">
 <a href="#section-3.3.1" class="section-number selfRef">3.3.1. </a><a href="#name-covert-inspection" class="section-name selfRef">Covert Inspection</a>
           </h4>
-<p id="section-3.3.1-1">Verifiers never want to reveal themselves as inspecting emblems, which we express in a requirement that we call <em>covert inspection</em>.
-If verifiers were to reveal this, their targets could use that knowledge to protect themselves against an imminent attack, and verifiers would therefore not inspect emblems.
+<p id="section-3.3.1-1">A digital emblem <span class="bcp14">MUST NOT</span> reveal who is inspecting it.
+We call this requirement <em>covert inspection</em>.
+If verifiers were to reveal that they are inspecting digital emblems, their targets (potentially unprotected) could use that knowledge to protect themselves against an imminent attack, and verifiers would therefore not inspect emblems.
 In particular, covert inspection implies that emblem presentation must be <em>active</em>, i.e., verifiers will be sent emblems and need not query them explicitly.<a href="#section-3.3.1-1" class="pilcrow">¶</a></p>
 </section>
 </div>
@@ -1323,7 +1324,7 @@ In particular, covert inspection implies that emblem presentation must be <em>ac
           <h4 id="name-authentic">
 <a href="#section-3.3.2" class="section-number selfRef">3.3.2. </a><a href="#name-authentic" class="section-name selfRef">Authentic</a>
           </h4>
-<p id="section-3.3.2-1">Digital emblems must be <em>authentic</em>, i.e., a digital emblem only marks assets that are used to provide medical services or conduct humanitarian operations.
+<p id="section-3.3.2-1">Digital emblems <span class="bcp14">MUST</span> be <em>authentic</em>, i.e., a digital emblem only marks assets that are used to provide medical services or conduct humanitarian operations.
 If it were not authentic, verifiers would risk that their lawful, i.e., unprotected, targets could avert attacks by displaying fraudulent emblems, and verifiers would again not inspect emblems.<a href="#section-3.3.2-1" class="pilcrow">¶</a></p>
 </section>
 </div>
@@ -1332,7 +1333,7 @@ If it were not authentic, verifiers would risk that their lawful, i.e., unprotec
           <h4 id="name-decentralized-trust-model">
 <a href="#section-3.3.3" class="section-number selfRef">3.3.3. </a><a href="#name-decentralized-trust-model" class="section-name selfRef">Decentralized Trust Model</a>
           </h4>
-<p id="section-3.3.3-1">Compliance with existing IHL implies that there must be no fixed set of authorities that can regulate how a digital emblem is used, i.e., it must follow a <em>decentralized trust model</em>.<a href="#section-3.3.3-1" class="pilcrow">¶</a></p>
+<p id="section-3.3.3-1">Compliance with existing IHL implies that there <span class="bcp14">MUST NOT</span> be a fixed set of authorities that can regulate how a digital emblem is used, i.e., it must follow a <em>decentralized trust model</em>.<a href="#section-3.3.3-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="accountable-display">
@@ -1342,7 +1343,7 @@ If it were not authentic, verifiers would risk that their lawful, i.e., unprotec
           </h4>
 <p id="section-3.3.4-1">Systems with a decentralized trust model can suffer from misuse.
 Should a digital emblem be codified in law, it is crucial that any unlawful display of digital emblems can be provably attributed to the respective parties such that they can be prosecuted.
-Hence, a digital emblem must provide <em>accountability</em>.<a href="#section-3.3.4-1" class="pilcrow">¶</a></p>
+Hence, a digital emblem <span class="bcp14">MUST</span> provide <em>accountability</em>.<a href="#section-3.3.4-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="removable-verifiable-presence">
@@ -1351,8 +1352,8 @@ Hence, a digital emblem must provide <em>accountability</em>.<a href="#section-3
 <a href="#section-3.3.5" class="section-number selfRef">3.3.5. </a><a href="#name-removable-verifiable-presen" class="section-name selfRef">Removable &amp; Verifiable Presence</a>
           </h4>
 <p id="section-3.3.5-1">A digital emblem should work just as the physical emblems.
-Just as a flag with a red cross can be displayed and removed at any time, a digital emblem must be applicable to the widest possible range of use cases and digital technologies, and also be easily <em>removable</em>.
-Additionally, agents must be able to <em>verify the presence</em> of digital emblems.
+Just as a flag with a red cross can be displayed and removed at any time, a digital emblem <span class="bcp14">MUST</span> be applicable to the widest possible range of use cases and digital technologies, and also be easily <em>removable</em>.
+Additionally, agents <span class="bcp14">MUST</span> be able to <em>verify the presence</em> of digital emblems.
 With physical emblems, unprotected assets will simply not show the red cross.
 Likewise, in the digital domain, these assets will not present an invalid emblem, but rather no emblem, and verifiers must be able to determine when no emblem was shown to them.<a href="#section-3.3.5-1" class="pilcrow">¶</a></p>
 </section>
