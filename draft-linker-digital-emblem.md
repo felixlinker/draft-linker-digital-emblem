@@ -27,6 +27,10 @@ author:
     fullname: Mauro Vignati
     organization: ICRC
     email: mvignati@icrc.org
+  -
+    fullname: Tommy Jensen
+    organization: Microsoft
+    email: tojens@microsoft.com
 
 normative:
 
