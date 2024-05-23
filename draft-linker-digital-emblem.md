@@ -248,7 +248,7 @@ The academic paper foresees distribution of digital emblems via TLS, DNS, and UD
 Next to its prototype, ADEM's security was thoroughly evaluated and formal proofs of security are described in the academic publication.
 
 Once there is consensus on the scope of a digital emblem, the plan is to propose ADEM as a basis for designing a digital emblem.
-Although ADEM was evaluated on many occasions, it is subject to change.
+Although ADEM has gone through several iterations in collaboration with the ICRC, it is expected that it will be refined by the IETF WG that adopts it to ensure industry interoperability with good protocol practices.
 In particular, it must be investigated whether it fits the needs of all stakeholders of a digital emblem.
 
 # Security Considerations
