@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-05-21T01:20:42.503129+00:00",
+  "timestamp": "2024-05-23T01:20:41.132981+00:00",
   "repo": "felixlinker/draft-linker-digital-emblem",
   "labels": [
     {
@@ -63,18 +63,26 @@
       "labels": [],
       "body": "",
       "createdAt": "2024-05-12T18:32:50Z",
-      "updatedAt": "2024-05-13T07:46:27Z",
+      "updatedAt": "2024-05-21T09:23:09Z",
       "baseRepository": "felixlinker/draft-linker-digital-emblem",
       "baseRefName": "main",
       "baseRefOid": "dc263010e38558f1401a2b1f9a062071d630686c",
       "headRepository": "mstojens/draft-linker-digital-emblem",
       "headRefName": "patch-1",
-      "headRefOid": "2cfa12fbe608ace2e00c1f286e45b746c089eab9",
+      "headRefOid": "3c31270d01b5278b56fe261a684b529466ecd935",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
-      "comments": [],
+      "comments": [
+        {
+          "author": "felixlinker",
+          "authorAssociation": "OWNER",
+          "body": "Hi @mstojens! I did a rewrite of your changes. I tried to end it on a more positive note. Let me know what you think of my changes. I think, my language is a bit less IETF-style than yours (I talk less about deployers, vencors, etc.). This is maybe not ideal. But it's hard for me to talk this language! Anyways. Let me know what you think!",
+          "createdAt": "2024-05-21T08:23:04Z",
+          "updatedAt": "2024-05-21T08:23:04Z"
+        }
+      ],
       "reviews": [
         {
           "id": "PRR_kwDOL2KzRM56Tfz2",
@@ -113,8 +121,55 @@
               "updatedAt": "2024-05-13T07:46:27Z"
             }
           ]
+        },
+        {
+          "id": "PRR_kwDOL2KzRM57Q-fz",
+          "commit": {
+            "abbreviatedOid": "3c31270"
+          },
+          "author": "felixlinker",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-05-21T09:23:09Z",
+          "updatedAt": "2024-05-21T09:23:09Z",
+          "comments": []
         }
       ]
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDOL2KzRM5wDnXK",
+      "title": "Discuss existing proposals",
+      "url": "https://github.com/felixlinker/draft-linker-digital-emblem/pull/2",
+      "state": "OPEN",
+      "author": "felixlinker",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-05-21T09:15:55Z",
+      "updatedAt": "2024-05-21T09:17:01Z",
+      "baseRepository": "felixlinker/draft-linker-digital-emblem",
+      "baseRefName": "main",
+      "baseRefOid": "2e33475354a017d3867a91e6596099dcab06fa74",
+      "headRepository": "felixlinker/draft-linker-digital-emblem",
+      "headRefName": "proposals",
+      "headRefOid": "d8c7ffdbc32a17a54182d1a3710a7c98d7a13001",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [
+        {
+          "author": "felixlinker",
+          "authorAssociation": "OWNER",
+          "body": "@mstojens Would be great if you could review!",
+          "createdAt": "2024-05-21T09:17:00Z",
+          "updatedAt": "2024-05-21T09:17:00Z"
+        }
+      ],
+      "reviews": []
     }
   ]
 }
