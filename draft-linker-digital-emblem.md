@@ -239,7 +239,7 @@ A digital emblem must always identify assets that only serve purposes that enjoy
 Two designs were proposed to solve the problem of a digital emblem.
 First, JHU APL proposed a DNS-based solution for a digital emblem {{?I-D.haberman-digital-emblem}}.
 Second, CECYT (a joint endeavour between ETH Zurich and Bonn University) proposed *An Authentic Digital EMblem (ADEM)*, which was initially described in an academic publication {{ADEM}}, but was also specified technically {{ADEM-SPEC}} and has openly accessible, working prototypes ([Go library and CLI](https://github.com/adem-wg/adem-proto), [Browser extension](https://github.com/adem-wg/adem-chrome)).
-We focus here on ADEM as it was selected by the ICRC as the most suitable proposal for a digital emblem.
+We focus here on ADEM as it was selected by the ICRC as the most suitable proposal for a digital emblem given its scope of applying emblems to digital assets and using the existing physical emblems for labeling physical assets.
 
 ADEM was designed following the requirements laid out in this draft.
 ADEM follows a decentralized trust model and utilizes existing infrastructure wherever possible, e.g., it provides accountability through the Certificate Transparency infrastructure {{?RFC6962}}.
