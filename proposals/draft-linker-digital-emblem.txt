@@ -331,7 +331,8 @@ Table of Contents
    (https://github.com/adem-wg/adem-proto), Browser extension
    (https://github.com/adem-wg/adem-chrome)).  We focus here on ADEM as
    it was selected by the ICRC as the most suitable proposal for a
-   digital emblem.
+   digital emblem given its scope of applying emblems to digital assets
+   and using the existing physical emblems for labeling physical assets.
 
    ADEM was designed following the requirements laid out in this draft.
    ADEM follows a decentralized trust model and utilizes existing
