@@ -5,9 +5,9 @@
 Network Working Group                                          F. Linker
 Internet-Draft                                                  D. Basin
 Intended status: Informational                                ETH Zurich
-Expires: 22 November 2024                                     M. Vignati
+Expires: 24 November 2024                                     M. Vignati
                                                                     ICRC
-                                                             21 May 2024
+                                                             23 May 2024
 
 
                  Problem Statement for a Digital Emblem
@@ -44,7 +44,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 November 2024.
+   This Internet-Draft will expire on 24 November 2024.
 
 Copyright Notice
 
@@ -345,9 +345,11 @@ Table of Contents
 
    Once there is consensus on the scope of a digital emblem, the plan is
    to propose ADEM as a basis for designing a digital emblem.  Although
-   ADEM was evaluated on many occasions, it is subject to change.  In
-   particular, it must be investigated whether it fits the needs of all
-   stakeholders of a digital emblem.
+   ADEM has gone through several iterations in collaboration with the
+   ICRC, it is expected that it will be refined by the IETF WG that
+   adopts it to ensure industry interoperability with good protocol
+   practices.  In particular, it must be investigated whether it fits
+   the needs of all stakeholders of a digital emblem.
 
 5.  Security Considerations
 
