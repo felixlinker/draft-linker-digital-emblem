@@ -157,7 +157,7 @@ We can assume that most verifiers (typically military units) will be associated 
 Finally, we define *adversaries* as those agents that are willing to violate IHL and search to abuse digital emblems.
 For example, they may seek to issue emblems to non-protected assets.
 
-## Requirements
+## Requirements {#reqs}
 
 The digital emblem's requirements were adapted from the ICRC's report on digital emblems {{DE-REPORT}}.
 However, whereas the report introduces requirements on a much higher, abstract level and without a detailed consideration of security, we present a comprehensive list of actionable, technical requirements.
@@ -250,6 +250,25 @@ Next to its prototype, ADEM's security was thoroughly evaluated and formal proof
 Once there is consensus on the scope of a digital emblem, the plan is to propose ADEM as a basis for designing a digital emblem.
 Although ADEM has gone through several iterations in collaboration with the ICRC, it is expected that it will be refined by the IETF WG that adopts it to ensure industry interoperability with good protocol practices.
 In particular, it must be investigated whether it fits the needs of all stakeholders of a digital emblem.
+
+# Considerations of Potential Risks
+
+Because digital emblems label digital infrastructure as legally protected, misuse of a digital emblem may
+not always be automatically detectable. In this section, we discuss two examples of potential misuse and
+how the {{reqs}} section aims ensure that this standard is utilized responsibly.
+
+First, a nation state could misuse a digital emblem to wrongfully protect infrastructure used to enforce
+Internet censorship or shutdowns for its population. Second, technology vendors that provide online services
+or resources might maliciously or accidentally apply digital emblems to not only IHL-protected assets but
+their general infrastructure that hosts this and other services. In both cases, such misuse would abuse and
+potentially undermine combatants' and resistance movements' respect for IHL only to label one's own
+infrastructure, which even may actively harm human rights.
+
+In all cases where a digital emblem is deployed, it should be noted that verifying a digital emblem
+MAY include more than verifying its presence and authenticity. Verifiers MAY also observe other behavior
+of the emblem-bearing asset, applying heuristics to check whether its plausible that the asset displays a
+digital emblem. Additionally, we point out that digital emblem's mechanism of providing authentication
+additionally enables combatants to hold emblem-bearers accountable should misuse be detected.
 
 # Security Considerations
 
