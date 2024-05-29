@@ -5,9 +5,11 @@
 Network Working Group                                          F. Linker
 Internet-Draft                                                  D. Basin
 Intended status: Informational                                ETH Zurich
-Expires: 22 November 2024                                     M. Vignati
+Expires: 30 November 2024                                     M. Vignati
                                                                     ICRC
-                                                             21 May 2024
+                                                               T. Jensen
+                                                               Microsoft
+                                                             29 May 2024
 
 
                  Problem Statement for a Digital Emblem
@@ -44,7 +46,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 November 2024.
+   This Internet-Draft will expire on 30 November 2024.
 
 Copyright Notice
 
@@ -79,11 +81,12 @@ Table of Contents
        3.4.3.  Servers
        3.4.4.  Networks
      3.5.  Excluded Scenarios
-   4.  Security Considerations
-   5.  IANA Considerations
-   6.  References
-     6.1.  Normative References
-     6.2.  Informative References
+   4.  Proposed Designs for a Digital Emblem
+   5.  Security Considerations
+   6.  IANA Considerations
+   7.  References
+     7.1.  Normative References
+     7.2.  Informative References
    Acknowledgments
    Authors' Addresses
 
@@ -130,6 +133,15 @@ Table of Contents
        physical emblem from a distance: A flag of a red cross does
        similarly not raise attention to the fact that its being looked
        at.
+
+   Work on the digital emblem dates back multiple years.  In 2020, the
+   ICRC invited two research institutions, Johns Hopkins University
+   Applied Physics Laboratory (APL) and the Centre for Cyber Trust
+   (CECYT), a joint research centre between ETH Zurich and Bonn
+   University, to develop technical proposals for a digital emblem.
+   These proposals were presented to and evaluated by a group of
+   international experts at the invitation of the ICRC [DE-REPORT].  We
+   discuss the proposed designs in Section 4.
 
 2.  Conventions and Definitions
 
@@ -309,7 +321,40 @@ Table of Contents
    emblem must always identify assets that only serve purposes that
    enjoy protection under IHL.
 
-4.  Security Considerations
+4.  Proposed Designs for a Digital Emblem
+
+   Two designs were proposed to solve the problem of a digital emblem.
+   First, JHU APL proposed a DNS-based solution for a digital emblem
+   [I-D.haberman-digital-emblem].  Second, CECYT (a joint endeavour
+   between ETH Zurich and Bonn University) proposed _An Authentic
+   Digital EMblem (ADEM)_, which was initially described in an academic
+   publication [ADEM], but was also specified technically [ADEM-SPEC]
+   and has openly accessible, working prototypes (Go library and CLI
+   (https://github.com/adem-wg/adem-proto), Browser extension
+   (https://github.com/adem-wg/adem-chrome)).  We focus here on ADEM as
+   it was selected by the ICRC as the most suitable proposal for a
+   digital emblem given its scope of applying emblems to digital assets
+   and using the existing physical emblems for labeling physical assets.
+
+   ADEM was designed following the requirements laid out in this draft.
+   ADEM follows a decentralized trust model and utilizes existing
+   infrastructure wherever possible, e.g., it provides accountability
+   through the Certificate Transparency infrastructure [RFC6962].  ADEM
+   was designed to be distributed over many channels and as such is not
+   bound to one mode of transportation.  The academic paper foresees
+   distribution of digital emblems via TLS, DNS, and UDP.  Next to its
+   prototype, ADEM's security was thoroughly evaluated and formal proofs
+   of security are described in the academic publication.
+
+   Once there is consensus on the scope of a digital emblem, the plan is
+   to propose ADEM as a basis for designing a digital emblem.  Although
+   ADEM has gone through several iterations in collaboration with the
+   ICRC, it is expected that it will be refined by the IETF WG that
+   adopts it to ensure industry interoperability with good protocol
+   practices.  In particular, it must be investigated whether it fits
+   the needs of all stakeholders of a digital emblem.
+
+5.  Security Considerations
 
    The requirements "covert inspection", "authentic", and "accountable
    display" are all security requirements, i.e., one must consider
@@ -319,13 +364,13 @@ Table of Contents
    ADEM's security, and any subsequent proposal should be rigorously
    analyzed as well.
 
-5.  IANA Considerations
+6.  IANA Considerations
 
    This document has no IANA actions.
 
-6.  References
+7.  References
 
-6.1.  Normative References
+7.1.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
@@ -336,7 +381,7 @@ Table of Contents
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
 
-6.2.  Informative References
+7.2.  Informative References
 
    [ADEM]     Linker, F. and D. Basin, "ADEM: An Authentic Digital
               EMblem", CCS '23 Proceedings of the 2023 ACM SIGSAC
@@ -344,12 +389,30 @@ Table of Contents
               November 2023,
               <https://dl.acm.org/doi/10.1145/3576915.3616578>.
 
+   [ADEM-SPEC]
+              Linker, F., Jackson, D., and D. Basin, "An Authenticated
+              Digital EMblem - Core Specification", August 2023,
+              <https://adem-wg.github.io/adem-spec/draft-adem-wg-adem-
+              core.html>.
+
    [DE-REPORT]
               Rodenhäuser, T., Vignati, M., Maybee, L., and H. Johnston,
               "Digitalizing the Red Cross, Red Crescent and Red Crystal
               Emblems", November 2022,
               <https://www.icrc.org/en/document/icrc-digital-emblems-
               report>.
+
+   [I-D.haberman-digital-emblem]
+              Haberman, B., Mankin, A., Woodcock, B., Deccio, C., and A.
+              DeSimone, "Digital Emblems Indicating Protections Under
+              International Law", Work in Progress, Internet-Draft,
+              draft-haberman-digital-emblem-00, 29 March 2024,
+              <https://datatracker.ietf.org/doc/html/draft-haberman-
+              digital-emblem-00>.
+
+   [RFC6962]  Laurie, B., Langley, A., and E. Kasper, "Certificate
+              Transparency", RFC 6962, DOI 10.17487/RFC6962, June 2013,
+              <https://www.rfc-editor.org/rfc/rfc6962>.
 
 Acknowledgments
 
@@ -373,3 +436,8 @@ Authors' Addresses
    Mauro Vignati
    ICRC
    Email: mvignati@icrc.org
+
+
+   Tommy Jensen
+   Microsoft
+   Email: tojens@microsoft.com
