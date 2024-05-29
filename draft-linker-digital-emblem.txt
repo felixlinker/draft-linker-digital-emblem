@@ -82,11 +82,12 @@ Table of Contents
        3.4.4.  Networks
      3.5.  Excluded Scenarios
    4.  Proposed Designs for a Digital Emblem
-   5.  Security Considerations
-   6.  IANA Considerations
-   7.  References
-     7.1.  Normative References
-     7.2.  Informative References
+   5.  Considerations of Potential Risks
+   6.  Security Considerations
+   7.  IANA Considerations
+   8.  References
+     8.1.  Normative References
+     8.2.  Informative References
    Acknowledgments
    Authors' Addresses
 
@@ -354,7 +355,34 @@ Table of Contents
    practices.  In particular, it must be investigated whether it fits
    the needs of all stakeholders of a digital emblem.
 
-5.  Security Considerations
+5.  Considerations of Potential Risks
+
+   Because digital emblems label digital infrastructure as legally
+   protected, misuse of a digital emblem may not always be automatically
+   detectable.  In this section, we discuss two examples of potential
+   misuse and how the Section 3.3 section aims ensure that this standard
+   is utilized responsibly.
+
+   First, a nation state could misuse a digital emblem to wrongfully
+   protect infrastructure used to enforce Internet censorship or
+   shutdowns for its population.  Second, technology vendors that
+   provide online services or resources might maliciously or
+   accidentally apply digital emblems to not only IHL-protected assets
+   but their general infrastructure that hosts this and other services.
+   In both cases, such misuse would abuse and potentially undermine
+   combatants' and resistance movements' respect for IHL only to label
+   one's own infrastructure, which even may actively harm human rights.
+
+   In all cases where a digital emblem is deployed, it should be noted
+   that verifying a digital emblem MAY include more than verifying its
+   presence and authenticity.  Verifiers MAY also observe other behavior
+   of the emblem-bearing asset, applying heuristics to check whether its
+   plausible that the asset displays a digital emblem.  Additionally, we
+   point out that digital emblem's mechanism of providing authentication
+   additionally enables combatants to hold emblem-bearers accountable
+   should misuse be detected.
+
+6.  Security Considerations
 
    The requirements "covert inspection", "authentic", and "accountable
    display" are all security requirements, i.e., one must consider
@@ -364,13 +392,13 @@ Table of Contents
    ADEM's security, and any subsequent proposal should be rigorously
    analyzed as well.
 
-6.  IANA Considerations
+7.  IANA Considerations
 
    This document has no IANA actions.
 
-7.  References
+8.  References
 
-7.1.  Normative References
+8.1.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
@@ -381,7 +409,7 @@ Table of Contents
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
 
-7.2.  Informative References
+8.2.  Informative References
 
    [ADEM]     Linker, F. and D. Basin, "ADEM: An Authentic Digital
               EMblem", CCS '23 Proceedings of the 2023 ACM SIGSAC
