@@ -27,6 +27,10 @@ author:
     fullname: Mauro Vignati
     organization: ICRC
     email: mvignati@icrc.org
+ -
+    fullname: Tommy Jensen
+    organization: Microsoft
+    email: tojens@microsoft.com
 
 normative:
 
@@ -44,6 +48,20 @@ informative:
       date: November 2023
       seriesinfo:
          CCS '23: Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security
+   ADEM-SPEC:
+      target: https://adem-wg.github.io/adem-spec/draft-adem-wg-adem-core.html
+      title: An Authenticated Digital EMblem - Core Specification
+      author:
+         -
+            name: Felix Linker
+            org: ETH Zurich
+         -
+            name: Dennis Jackson
+            org: None
+         -
+            name: David Basin
+            org: ETH Zurich
+      date: 28 August 2023
    DE-REPORT:
       target: https://www.icrc.org/en/document/icrc-digital-emblems-report
       title: "Digitalizing the Red Cross, Red Crescent and Red Crystal Emblems"
@@ -98,6 +116,10 @@ Protection under IHL stems from law, and laws must be enforceable to have an eff
 We call this property *covert inspection*.
 This is analogous to looking at a physical emblem from a distance: A flag of a red cross does similarly not raise attention to the fact that its being looked at.
 
+Work on the digital emblem dates back multiple years.
+In 2020, the ICRC invited two research institutions, Johns Hopkins University Applied Physics Laboratory (APL) and the Centre for Cyber Trust (CECYT), a joint research centre between ETH Zurich and Bonn University, to develop technical proposals for a digital emblem.
+These proposals were presented to and evaluated by a group of international experts at the invitation of the ICRC {{DE-REPORT}}.
+We discuss the proposed designs in {{proposals}}.
 
 # Conventions and Definitions
 
@@ -148,30 +170,31 @@ The digital emblem's requirements are derived from two important insights.
 
 ### Covert Inspection
 
-Verifiers never want to reveal themselves as inspecting emblems, which we express in a requirement that we call *covert inspection*.
-If verifiers were to reveal this, their targets could use that knowledge to protect themselves against an imminent attack, and verifiers would therefore not inspect emblems.
+A digital emblem MUST NOT reveal who is inspecting it.
+We call this requirement *covert inspection*.
+If verifiers were to reveal that they are inspecting digital emblems, their targets (potentially unprotected) could use that knowledge to protect themselves against an imminent attack, and verifiers would therefore not inspect emblems.
 In particular, covert inspection implies that emblem presentation must be *active*, i.e., verifiers will be sent emblems and need not query them explicitly.
 
 ### Authentic
 
-Digital emblems must be *authentic*, i.e., a digital emblem only marks assets that are used to provide medical services or conduct humanitarian operations.
+Digital emblems MUST be *authentic*, i.e., a digital emblem only marks assets that are used to provide medical services or conduct humanitarian operations.
 If it were not authentic, verifiers would risk that their lawful, i.e., unprotected, targets could avert attacks by displaying fraudulent emblems, and verifiers would again not inspect emblems.
 
 ### Decentralized Trust Model
 
-Compliance with existing IHL implies that there must be no fixed set of authorities that can regulate how a digital emblem is used, i.e., it must follow a *decentralized trust model*.
+Compliance with existing IHL implies that there MUST NOT be a fixed set of authorities that can regulate how a digital emblem is used, i.e., it must follow a *decentralized trust model*.
 
 ### Accountable Display
 
 Systems with a decentralized trust model can suffer from misuse.
 Should a digital emblem be codified in law, it is crucial that any unlawful display of digital emblems can be provably attributed to the respective parties such that they can be prosecuted.
-Hence, a digital emblem must provide *accountability*.
+Hence, a digital emblem MUST provide *accountability*.
 
 ### Removable & Verifiable Presence
 
 A digital emblem should work just as the physical emblems.
-Just as a flag with a red cross can be displayed and removed at any time, a digital emblem must be applicable to the widest possible range of use cases and digital technologies, and also be easily *removable*.
-Additionally, agents must be able to *verify the presence* of digital emblems.
+Just as a flag with a red cross can be displayed and removed at any time, a digital emblem MUST be applicable to the widest possible range of use cases and digital technologies, and also be easily *removable*.
+Additionally, agents MUST be able to *verify the presence* of digital emblems.
 With physical emblems, unprotected assets will simply not show the red cross.
 Likewise, in the digital domain, these assets will not present an invalid emblem, but rather no emblem, and verifiers must be able to determine when no emblem was shown to them.
 
@@ -210,6 +233,23 @@ However, marking entire networks should drastically ease the burden of deploymen
 
 Notably, a digital emblem cannot be applied to infrastructure that is used for both services worthy and unworthy of protection.
 A digital emblem must always identify assets that only serve purposes that enjoy protection under IHL.
+
+# Proposed Designs for a Digital Emblem {#proposals}
+
+Two designs were proposed to solve the problem of a digital emblem.
+First, JHU APL proposed a DNS-based solution for a digital emblem {{?I-D.haberman-digital-emblem}}.
+Second, CECYT (a joint endeavour between ETH Zurich and Bonn University) proposed *An Authentic Digital EMblem (ADEM)*, which was initially described in an academic publication {{ADEM}}, but was also specified technically {{ADEM-SPEC}} and has openly accessible, working prototypes ([Go library and CLI](https://github.com/adem-wg/adem-proto), [Browser extension](https://github.com/adem-wg/adem-chrome)).
+We focus here on ADEM as it was selected by the ICRC as the most suitable proposal for a digital emblem given its scope of applying emblems to digital assets and using the existing physical emblems for labeling physical assets.
+
+ADEM was designed following the requirements laid out in this draft.
+ADEM follows a decentralized trust model and utilizes existing infrastructure wherever possible, e.g., it provides accountability through the Certificate Transparency infrastructure {{?RFC6962}}.
+ADEM was designed to be distributed over many channels and as such is not bound to one mode of transportation.
+The academic paper foresees distribution of digital emblems via TLS, DNS, and UDP.
+Next to its prototype, ADEM's security was thoroughly evaluated and formal proofs of security are described in the academic publication.
+
+Once there is consensus on the scope of a digital emblem, the plan is to propose ADEM as a basis for designing a digital emblem.
+Although ADEM has gone through several iterations in collaboration with the ICRC, it is expected that it will be refined by the IETF WG that adopts it to ensure industry interoperability with good protocol practices.
+In particular, it must be investigated whether it fits the needs of all stakeholders of a digital emblem.
 
 # Considerations of Potential Risks
 
