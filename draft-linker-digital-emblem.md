@@ -170,7 +170,7 @@ The digital emblem's requirements are derived from two important insights.
 
 ### Covert Inspection
 
-A digital emblem MUST NOT reveal who is inspecting it.
+A digital emblem MUST NOT reveal whether someone is inspecting it.
 We call this requirement *covert inspection*.
 If verifiers were to reveal that they are inspecting digital emblems, their targets (potentially unprotected) could use that knowledge to protect themselves against an imminent attack, and verifiers would therefore not inspect emblems.
 In particular, covert inspection implies that emblem presentation must be *active*, i.e., verifiers will be sent emblems and need not query them explicitly.
