@@ -5,11 +5,11 @@
 Network Working Group                                          F. Linker
 Internet-Draft                                                  D. Basin
 Intended status: Informational                                ETH Zurich
-Expires: 30 November 2024                                     M. Vignati
+Expires: 30 December 2024                                     M. Vignati
                                                                     ICRC
                                                                T. Jensen
                                                                Microsoft
-                                                             29 May 2024
+                                                            28 June 2024
 
 
                  Problem Statement for a Digital Emblem
@@ -46,7 +46,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 30 November 2024.
+   This Internet-Draft will expire on 30 December 2024.
 
 Copyright Notice
 
@@ -224,14 +224,14 @@ Table of Contents
 
 3.3.1.  Covert Inspection
 
-   A digital emblem MUST NOT reveal who is inspecting it.  We call this
-   requirement _covert inspection_. If verifiers were to reveal that
-   they are inspecting digital emblems, their targets (potentially
-   unprotected) could use that knowledge to protect themselves against
-   an imminent attack, and verifiers would therefore not inspect
-   emblems.  In particular, covert inspection implies that emblem
-   presentation must be _active_, i.e., verifiers will be sent emblems
-   and need not query them explicitly.
+   A digital emblem MUST NOT reveal whether someone is inspecting it.
+   We call this requirement _covert inspection_. If verifiers were to
+   reveal that they are inspecting digital emblems, their targets
+   (potentially unprotected) could use that knowledge to protect
+   themselves against an imminent attack, and verifiers would therefore
+   not inspect emblems.  In particular, covert inspection implies that
+   emblem presentation must be _active_, i.e., verifiers will be sent
+   emblems and need not query them explicitly.
 
 3.3.2.  Authentic
 
