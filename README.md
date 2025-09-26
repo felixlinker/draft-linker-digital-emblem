@@ -1,3 +1,7 @@
+> [!WARNING]
+> This repository contains a problem statement that was brought to the IETF in an effort to charter the [diem](https://datatracker.ietf.org/wg/diem/about/) WG.
+> The WG has now been chartered, thus, this repository is now archived.
+
 # An Authentic Digital Emblem
 
 This is the working area for the individual Internet-Draft, "An Authentic Digital Emblem".
